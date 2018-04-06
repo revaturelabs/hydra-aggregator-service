@@ -1,0 +1,9 @@
+---
+applications:
+- name: aggregator
+  memory: 1024M
+  command: null
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+
+
+
