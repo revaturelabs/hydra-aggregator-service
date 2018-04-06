@@ -1,9 +1,8 @@
 ---
 applications:
 - name: aggregator
-  memory: 1024M
-  command: null
-  buildpack: https://github.com/cloudfoundry/java-buildpack
+  path: ./target/batch-0.0.1.jar
+  no-route: true
 
 
 
