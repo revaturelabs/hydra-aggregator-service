@@ -1,7 +1,7 @@
 ---
 applications:
 - name: aggregator
-  path: ./target/batch-0.0.1.jar
+  path: ./target/hydra-aggregator-service-0.0.1-SNAPSHOT.jar
   no-route: true
 
 
