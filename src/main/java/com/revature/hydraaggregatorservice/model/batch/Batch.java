@@ -1,4 +1,4 @@
-package com.revature.hydraaggregatorservice.model;
+package com.revature.hydraaggregatorservice.model.batch;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
