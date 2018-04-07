@@ -12,4 +12,22 @@ INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRES
 INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3004,70,(SYSDATE+10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-10),'1804 OCT26 Java','Revature',7,null,23,2,7);
 INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3005,70,(SYSDATE-10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-20),'1805 OCT26 Java','Revature',7,null,24,2,7);
 INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3006,70,(SYSDATE+10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-10),'1806 NOV08 Java','Revature',7,null,25,2,7);
+
+-- ADDRESS
+Insert into ADDRESS (ADDRESS_ID,STREET,CITY,STATE,ZIPCODE,COMPANY,ACTIVE) values (1,'65-30 Kissena Blvd, CEP Hall 2','Queens','NY','11367','Tech Incubator at Queens College',true);
+Insert into ADDRESS (ADDRESS_ID,STREET,CITY,STATE,ZIPCODE,COMPANY,ACTIVE) values (2,'11730 Plaza America Drive, 2nd Floor','Reston','VA','20190','Revature LLC',true);
+
+insert into location (id, active, city, name, state) values (1, true, 'Reston', 'Reston HQ', 'Virginia');
+insert into location (id, active, city, name, state) values (2, true, 'Tampa', 'Tampa training location', 'Florida');
+
+insert into building (id, active, location, name) values (1, true, 1, 'Reston main');
+insert into building (id, active, location, name) values (2, true, 1, 'Reston other builing');
+insert into building (id, active, location, name) values (3, true, 2, 'Tampa main');
+insert into building (id, active, location, name) values (4, true, 2, 'Tampa other building');
+
+insert into room (id, active, building_id, name) values (1, true, 1, 'Room 304');
+insert into room (id, active, building_id, name) values (2, true, 1, 'Room 305');
+insert into room (id, active, building_id, name) values (3, true, 3, 'Room 101');
+
+
 COMMIT;
