@@ -1,14 +1,14 @@
 package com.revature.hydraaggregatorservice.model.skill;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
+import com.revature.hydraaggregatorservice.model.curriculum.Curriculum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
+
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -18,10 +18,13 @@ public class Skill {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer skillId;
+    private Integer id;
 
     private String name;
 
     @ColumnDefault("true")
     private boolean active;
+
+    @ManyToMany(mappedBy = "skills")
+    private Set<Curriculum> curricula;
 }

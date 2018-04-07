@@ -31,9 +31,18 @@ insert into room (id, active, building_id, name) values (3, true, 3, 'Room 101')
 
 -- SKILLS
 
-insert into skill(skill_id, name, active) values (1, 'skill1', true);
-insert into skill(skill_id, name, active) values (2, 'skill2', true);
-insert into skill(skill_id, name, active) values (3, 'skill3', false);
-insert into skill(skill_id, name, active) values (4, 'skill4', true);
+insert into skill(id, name, active) values (1, 'skill1', true);
+insert into skill(id, name, active) values (2, 'skill2', true);
+insert into skill(id, name, active) values (3, 'skill3', false);
+insert into skill(id, name, active) values (4, 'skill4', true);
+
+-- CURRICULUM
+
+insert into curriculum(name, active, core) values ('Core Java', true, true);
+insert into curriculum(name, active, core) values ('Core Java', true, true);
+insert into curriculum_skill(curriculum_id, skill_id) values (1, 1);
+insert into curriculum_skill(curriculum_id, skill_id) values (1, 2);
+insert into curriculum_skill(curriculum_id, skill_id) values (1, 3);
+insert into curriculum_skill(curriculum_id, skill_id) values (1, 4);
 
 COMMIT;
