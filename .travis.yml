@@ -1,0 +1,24 @@
+language: java
+addons:
+  sonarcloud:
+    organization: revaturelabs
+    token:
+      secure: YPDrDVk8zL326UxkI18vLdfqMrVI8Q7G/pzBVHPUBCW16/PBrq4LqEISnNkRVDa10KONqGSh2NhOzx6OxY/CnQWmmYEt5U3BQiFqNNymDMF3Ev9TUQyXpa4pU8TY+o0RE0yxPpkB4KTykKS26sSZJowssmrr67DEL/DAcO/JAMg0/6UoPc05F/Ktg+F/MUm3c0fZ+ZoBo9C7znqKxd/kUJKHuGHwEizQ8T8Uol91ML+eZkFzsMPPMCKvqJo1EQDdSW4Fa+KbXjBpfRQkb38CqH0MWFo28VdPUkA1J4MxiG/kmuGv3L/DlIqYGGSfKUUswVlWONyhlr3AHU6LJVZAOAUblsXTJje42r1e8OH8u46lNq6BZaC2RGbT0KPvGVuL7beIyAMghNv44khxQ//+Ag7gxRCDMWQBi0CTFDAvtd7thiidGqXqo2zPZdBE5hDtv1IY7ja02pcEHLHHVz83AMrNl/vvO1P9MV04QDKzw/QxQZmXW/hscsx1jwQyHipblcFDosdH4KcKiM8A4slCYTMH7+n7ihJ1X0PK36s1SldcIQkR+3Xw2mPTVpwkm4NUHLl2Alk7ZZ7qPcXoq/L23zv8ce4yTPQvXxIkoRuiUTajuYwDJcFVpYqG1oipPYxklNdc/tPKxw2JJlHv98SethORikk+q0Y4SgNLDT90XM8=
+script:
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.host.url=https://sonarcloud.io
+deploy:
+  skip_cleanup: true
+  provider: cloudfoundry
+  api: https://api.run.pivotal.io
+  username: pdawson2090@gmail.com
+  password:
+    secure: W3yXDkASxAyBpPAV//JtZiTwfOJ1qwsxu+GOGXc5S13GAyPpbKmaxdv5yMzwhHJANw7gLHxWKshadnLqiSvVqKyl0VpjOSYgCvfGNlyJL/J4Yr7nBzE0IOrtCmUucPDBIHdkPnsi3I0NhY/8cINb14YN7J6kAuoXjMYPO+1yKRBcbkeIuGErIJjuR6/tLdA2LzRXnb2tpMTboBmR3p56Yz5iODBl4KLRfbLk6BASlXJnK6Ij+VNvhr+W2KJuEBv7+DOFkWq2GKWPIsd7+/M7Y5nxY7bnJq89NWqJ9udpiPmV5q3K4dGCr4BOd6r1ljm/ytTqVPgPOonXBIhn9vFThyX6i8UjMPiWYP3QjAK1PEFyq0S1fnzirHsWqdbUc8Svr3gpAoABTxoHk4LvrbSfQZxbwPO2Tn7ppWVWVg3bEITb4NUenoUT1c4WtMJ5O6gNIGGnHodrQFBOiijpiJz3M69Zc+GjxR8Fi1kbGyBe5v7Vf1usQFXMMmzLJfHEs10XrvgapO0JnF5zk6nn5Da20Qexh0QihFwH1GpMti/tMj9bMhdzRKh4BdgAH0G5ZrX3az2wap2xwYmtE7Co9JaltyFWLmD5jytfk++CDR+uMhqkxDWfLN80QttGq26yIAUCz+sPzaiFpBYZ03RG7bBo/iO5wX/EZmQhUUlKPHOHgDo=
+  organization: august-duet.org
+  space: development
+  on:
+    repo: revaturelabs/hydra-aggregator-service
+    branch: develop
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+  - "$HOME/.sonar/cache"
