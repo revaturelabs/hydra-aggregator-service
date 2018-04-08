@@ -10,6 +10,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Builder
 @EqualsAndHashCode(exclude = "skills")
 @ToString(exclude = "skills")
 public class Curriculum {

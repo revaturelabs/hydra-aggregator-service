@@ -1,13 +1,11 @@
 package com.revature.hydraaggregatorservice.model.trainers;
 
-import javax.persistence.*;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.revature.hydraaggregatorservice.model.skill.Skill;
 import com.revature.hydraaggregatorservice.model.unavailable.Unavailable;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
+import javax.persistence.*;
 import java.util.Set;
 
 @Data
@@ -16,6 +14,7 @@ import java.util.Set;
 @Entity
 @EqualsAndHashCode(exclude = {"skills"})
 @ToString(exclude = {"skills"})
+@Builder
 public class Trainer {
 
     @Id
@@ -24,8 +23,6 @@ public class Trainer {
 
     private String firstName;
     private String lastName;
-    private String title;
-    private String email;
     private byte[] certifications;
     private byte[] resume;
 
@@ -43,10 +40,6 @@ public class Trainer {
 
     @ColumnDefault("true")
     private boolean active;
-
-    // TODO: Certifications
-
-    // TODO: Resume's
 
     @Enumerated(EnumType.STRING)
     private Tier tier;
