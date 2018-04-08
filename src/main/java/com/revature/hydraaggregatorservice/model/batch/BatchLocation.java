@@ -1,10 +1,9 @@
-package com.revature.hydraaggregatorservice.model.location;
+package com.revature.hydraaggregatorservice.model.batch;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,15 +15,15 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Builder
 @Entity
-public class Building {
+public class BatchLocation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    @ColumnDefault("true")
-    private boolean active;
-
-    private String location;
-    private String name;
+    private Integer locationId;
+    private String locationName;
+    private Integer buildingId;
+    private String buildingName;
+    private Integer roomId;
+    private String roomName;
 }
