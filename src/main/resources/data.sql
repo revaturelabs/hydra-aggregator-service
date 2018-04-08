@@ -31,10 +31,10 @@ insert into room (id, active, building_id, name) values (3, true, 3, 'Room 101')
 
 -- SKILLS
 
-insert into skill(id, name, active) values (1, 'skill1', true);
-insert into skill(id, name, active) values (2, 'skill2', true);
-insert into skill(id, name, active) values (3, 'skill3', false);
-insert into skill(id, name, active) values (4, 'skill4', true);
+insert into skill(id, name, active) values (1, 'Java', true);
+insert into skill(id, name, active) values (2, 'SQL', true);
+insert into skill(id, name, active) values (3, 'Angular', false);
+insert into skill(id, name, active) values (4, 'C#', true);
 
 -- CURRICULUM
 
