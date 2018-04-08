@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.revature.hydraaggregatorservice.model.skill.Skill;
+import com.revature.hydraaggregatorservice.model.unavailable.Unavailable;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
@@ -25,6 +26,12 @@ public class Trainer {
     private String lastName;
     private String title;
     private String email;
+    private byte[] certifications;
+    private byte[] resume;
+
+    @OneToMany
+    @JoinColumn(name = "unavailable_id")
+    private Set<Unavailable> unavailabilities;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
