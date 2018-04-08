@@ -1,17 +1,17 @@
 -- BATCHES
-Insert into BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (2200,70,now(),80,'Tech Incubator at Queens College, 65-30 Kissena Blvd, CEP Hall 2, Queens, NY 11367','J2EE',now(),'1611 Nov14 Java (AP)','University',9,null,1,1,7);
-Insert into BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (2201,70,now(),80,'Tech Incubator at Queens College, 65-30 Kissena Blvd, CEP Hall 2, Queens, NY 11367','J2EE',now(),'1702 Feb13 Java (AP)','University',7,null,1,1,7);
-Insert into BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (2050,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE', now(),'1602 Feb08 Java','Revature',8,null,1,2,7);
-Insert into BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (2100,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE', now(),'1604 Apr25 Java','Revature',7,null,1,2,7);
-Insert into BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (2150,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE', now(),'1607 Jul11 Java','Revature',7,null,1,2,7);
-Insert into BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (2003,70,'2016-01-01',80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE', '2016-01-01','1509 Sept11 Java (delete)','Revature',1,null,1,2,7);
-INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3000,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',now(),'1800 Oct16 Java','Revature',7,null,20,2,7);
-INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3001,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',now(),'1801 Oct16 Java','Revature',7,null,2,2,7);
-INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3002,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',now(),'1802 Oct16 Java','Revature',7,null,21,2,7);
-INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3003,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',now(),'1803 Oct16 Java','Revature',7,null,22,2,7);
-INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3004,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',now(),'1804 OCT26 Java','Revature',7,null,23,2,7);
-INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3005,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',now(),'1805 OCT26 Java','Revature',7,null,24,2,7);
-INSERT INTO BATCH (BATCH_ID,BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (3006,70,now(),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',now(),'1806 NOV08 Java','Revature',7,null,25,2,7);
+Insert into BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (70,(SYSDATE+14),80,'Tech Incubator at Queens College, 65-30 Kissena Blvd, CEP Hall 2, Queens, NY 11367','J2EE',(SYSDATE-28),'1611 Nov14 Java (AP)','University',9,null,1,1,7);
+Insert into BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (70,(SYSDATE+28),80,'Tech Incubator at Queens College, 65-30 Kissena Blvd, CEP Hall 2, Queens, NY 11367','J2EE',(SYSDATE-7),'1702 Feb13 Java (AP)','University',7,null,1,1,7);
+Insert into BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (70,(SYSDATE-48),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE', (SYSDATE-72),'1602 Feb08 Java','Revature',8,null,1,2,7);
+Insert into BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (70,(SYSDATE-14),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE', (SYSDATE-35),'1604 Apr25 Java','Revature',7,null,1,2,7);
+Insert into BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (70,(SYSDATE+64),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE', (SYSDATE+28),'1607 Jul11 Java','Revature',7,null,1,2,7);
+Insert into BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) values (70,'2016-01-01',80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE', '2016-01-01','1509 Sept11 Java (delete)','Revature',1,null,1,2,7);
+INSERT INTO BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (70,(SYSDATE+10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-10),'1800 Oct16 Java','Revature',7,null,20,2,7);
+INSERT INTO BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (70,(SYSDATE+10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-10),'1801 Oct16 Java','Revature',7,null,2,2,7);
+INSERT INTO BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (70,(SYSDATE+10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-10),'1802 Oct16 Java','Revature',7,null,21,2,7);
+INSERT INTO BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (70,(SYSDATE+10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-10),'1803 Oct16 Java','Revature',7,null,22,2,7);
+INSERT INTO BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (70,(SYSDATE+10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-10),'1804 OCT26 Java','Revature',7,null,23,2,7);
+INSERT INTO BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (70,(SYSDATE-10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-20),'1805 OCT26 Java','Revature',7,null,24,2,7);
+INSERT INTO BATCH (BORDERLINE_GRADE_THRESHOLD,END_DATE,GOOD_GRADE_THRESHOLD,LOCATION,SKILL_TYPE,START_DATE,TRAINING_NAME,TRAINING_TYPE,NUMBER_OF_WEEKS,CO_TRAINER_ID,TRAINER_ID,ADDRESS_ID,GRADED_WEEKS) VALUES (70,(SYSDATE+10),80,'Revature LLC, 11730 Plaza America Drive, 2nd Floor | Reston, VA 20190','J2EE',(SYSDATE-10),'1806 NOV08 Java','Revature',7,null,25,2,7);
 
 -- ADDRESS
 Insert into ADDRESS (ADDRESS_ID,STREET,CITY,STATE,ZIPCODE,COMPANY,ACTIVE) values (1,'65-30 Kissena Blvd, CEP Hall 2','Queens','NY','11367','Tech Incubator at Queens College',true);
@@ -55,33 +55,62 @@ insert into unavailable(id, trainer_id, start_date, end_date) values (5, 2, '201
 
 -- TRAINER
 
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(0, 'patrick.walsh@revature.com', 'Patrick', 'Walsh', 'Lead Trainer', 'ROLE_VP');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(1, 'pjw6193@hotmail.com', 'Dan', 'Pickles', 'Lead Trainer', 'ROLE_VP');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(2, 'ravi.singh@revature.com', 'Ravi', 'Singh', 'Vice President of Technology', 'ROLE_VP');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(3, 'karan.dhirar@revature.com', 'Karan', 'Dhirar', 'Technology Manager', 'ROLE_VP');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(4, 'brian.connolly@revature.com', 'Brian', 'Connolly', 'Senior Java Developer', 'ROLE_VP');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(5, 'genesis.bonds@revature.com', 'Genesis', 'Bonds', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(6, 'ankit.garg@revature.com', 'Ankit', 'Garg', 'Lead Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(7, 'ryan.lessley@revature.com', 'Ryan', 'Lessley', 'Senior Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(8, 'steven.kelsey@revature.com', 'Steven', 'Kelsey', 'Senior Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(9, 'emily.higgins@revature.com', 'Emily', 'Higgins', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(10, 'taylor.kemper@revature.com', 'Taylor', 'Kemper', 'Senior Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(11, 'richard.orr@revature.com', 'Richard', 'Orr', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(12, 'nickolas.jurczak@revature.com', 'Nickolas', 'Jurczak', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(13, 'august.duet@revature.com', 'August', 'Duet', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(14, 'yuvarajd@revature.com', 'Yuvaraj', 'Damodaran', 'Lead Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(15, 'fred.belotte@revature.com', 'Fred', 'Belotte', 'Senior Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(16, 'mehrab.rahman@revature.com', 'Mehrab', 'Rahman', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(17, 'peter.alagna@revature.com', 'Peter', 'Alagna', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(18, 'stanleym@revature.com', 'Stanley', 'Medikonda', 'Staging Manager', 'ROLE_STAGING');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(19, 'grawyne@gmail.com', 'Gray', 'Wynne', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(20, 'owallace@mailinator.com', 'Orson', 'Wallace', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(21, 'slevinson@mailinator.com', 'Shelby', 'Levinson', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(22, 'wpayne@mailinator.com', 'Walter', 'Payne', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(23, 'nchurch@mailinator.com', 'Natalie', 'Church', 'Trainer', 'ROLE_TRAINER');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(24, 'aradcliff@mailinator.com', 'Archer', 'Radcliff', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('patrick.walsh@revature.com', 'Patrick', 'Walsh', 'Lead Trainer', 'ROLE_VP');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('pjw6193@hotmail.com', 'Dan', 'Pickles', 'Lead Trainer', 'ROLE_VP');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('ravi.singh@revature.com', 'Ravi', 'Singh', 'Vice President of Technology', 'ROLE_VP');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('karan.dhirar@revature.com', 'Karan', 'Dhirar', 'Technology Manager', 'ROLE_VP');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('brian.connolly@revature.com', 'Brian', 'Connolly', 'Senior Java Developer', 'ROLE_VP');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('genesis.bonds@revature.com', 'Genesis', 'Bonds', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('ankit.garg@revature.com', 'Ankit', 'Garg', 'Lead Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('ryan.lessley@revature.com', 'Ryan', 'Lessley', 'Senior Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('steven.kelsey@revature.com', 'Steven', 'Kelsey', 'Senior Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('emily.higgins@revature.com', 'Emily', 'Higgins', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('taylor.kemper@revature.com', 'Taylor', 'Kemper', 'Senior Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('richard.orr@revature.com', 'Richard', 'Orr', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('nickolas.jurczak@revature.com', 'Nickolas', 'Jurczak', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('august.duet@revature.com', 'August', 'Duet', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('yuvarajd@revature.com', 'Yuvaraj', 'Damodaran', 'Lead Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('fred.belotte@revature.com', 'Fred', 'Belotte', 'Senior Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('mehrab.rahman@revature.com', 'Mehrab', 'Rahman', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('peter.alagna@revature.com', 'Peter', 'Alagna', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('stanleym@revature.com', 'Stanley', 'Medikonda', 'Staging Manager', 'ROLE_STAGING');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('grawyne@gmail.com', 'Gray', 'Wynne', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('owallace@mailinator.com', 'Orson', 'Wallace', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('slevinson@mailinator.com', 'Shelby', 'Levinson', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('wpayne@mailinator.com', 'Walter', 'Payne', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('nchurch@mailinator.com', 'Natalie', 'Church', 'Trainer', 'ROLE_TRAINER');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('aradcliff@mailinator.com', 'Archer', 'Radcliff', 'Trainer', 'ROLE_TRAINER');
 --------------------------------------------------------------------------------------------------------------------MAKE PANEL ROLE
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(25, 'rajeshy@revature.com', 'Rajesh', 'Yamunachari', 'Senior Technical Manager', 'ROLE_PANEL');
-INSERT INTO TRAINER(TRAINER_ID, EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES(26, 'raghavan@revature.com', 'Raghavan', 'Swaminathan', 'Senior Technical Manager', 'ROLE_PANEL');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('rajeshy@revature.com', 'Rajesh', 'Yamunachari', 'Senior Technical Manager', 'ROLE_PANEL');
+INSERT INTO TRAINER(EMAIL, FIRST_NAME, LAST_NAME, TITLE, TIER) VALUES('raghavan@revature.com', 'Raghavan', 'Swaminathan', 'Senior Technical Manager', 'ROLE_PANEL');
+
+-- TRAINER/SKILL
+
+insert into skill_trainer(skill_id, trainer_id) values (1, 1);
+insert into skill_trainer(skill_id, trainer_id) values (1, 2);
+insert into skill_trainer(skill_id, trainer_id) values (1, 3);
+insert into skill_trainer(skill_id, trainer_id) values (1, 4);
+insert into skill_trainer(skill_id, trainer_id) values (1, 5);
+insert into skill_trainer(skill_id, trainer_id) values (1, 6);
+insert into skill_trainer(skill_id, trainer_id) values (1, 7);
+insert into skill_trainer(skill_id, trainer_id) values (1, 8);
+insert into skill_trainer(skill_id, trainer_id) values (1, 9);
+insert into skill_trainer(skill_id, trainer_id) values (1, 10);
+insert into skill_trainer(skill_id, trainer_id) values (1, 11);
+insert into skill_trainer(skill_id, trainer_id) values (1, 12);
+insert into skill_trainer(skill_id, trainer_id) values (1, 13);
+insert into skill_trainer(skill_id, trainer_id) values (1, 14);
+insert into skill_trainer(skill_id, trainer_id) values (1, 15);
+insert into skill_trainer(skill_id, trainer_id) values (1, 16);
+insert into skill_trainer(skill_id, trainer_id) values (1, 17);
+insert into skill_trainer(skill_id, trainer_id) values (1, 18);
+insert into skill_trainer(skill_id, trainer_id) values (1, 19);
+insert into skill_trainer(skill_id, trainer_id) values (1, 20);
+insert into skill_trainer(skill_id, trainer_id) values (1, 21);
+insert into skill_trainer(skill_id, trainer_id) values (1, 22);
+insert into skill_trainer(skill_id, trainer_id) values (1, 23);
+insert into skill_trainer(skill_id, trainer_id) values (1, 24);
+insert into skill_trainer(skill_id, trainer_id) values (1, 25);
+insert into skill_trainer(skill_id, trainer_id) values (1, 26);
 
 COMMIT;
