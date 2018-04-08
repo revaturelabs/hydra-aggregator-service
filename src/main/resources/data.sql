@@ -45,4 +45,7 @@ insert into unavailable(trainer_id, start_date, end_date) values (1, now(), now(
 insert into unavailable(trainer_id, start_date, end_date) values (2, now(), now());
 insert into unavailable(room_id, start_date, end_date) values (1, now(), now());
 
+-- ASSIGNFORCE SETTINGS
+insert into assignforce_settings(alias, trainers_per_page, report_grads, batch_length, report_incoming_grads, min_batch_size, max_batch_size, trainer_break_days, room_id, building_id, default_name_pattern) values (null, 0, 0, 0, 0, 0, 0, 0, 1, 1, null);
+
 COMMIT;

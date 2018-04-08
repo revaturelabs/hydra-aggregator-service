@@ -1,14 +1,13 @@
 package com.revature.hydraaggregatorservice.model.settings;
 
+import com.revature.hydraaggregatorservice.model.location.Building;
+import com.revature.hydraaggregatorservice.model.location.Room;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -29,7 +28,14 @@ public class AssignforceSettings {
     private Integer minBatchSize;
     private Integer maxBatchSize;
     private Integer trainerBreakDays;
-    private Integer defaultLocation;
-    private Integer defaultBuilding;
+
+    @OneToOne
+    @JoinColumn(name = "room_id")
+    private Room defaultLocation;
+
+    @OneToOne
+    @JoinColumn(name = "building_id")
+    private Building defaultBuilding;
+
     private String defaultNamePattern;
 }
