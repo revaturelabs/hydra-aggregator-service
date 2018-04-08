@@ -1,5 +1,8 @@
 package com.revature.hydraaggregatorservice.model.unavailable;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.revature.hydraaggregatorservice.model.location.Room;
+import com.revature.hydraaggregatorservice.model.trainers.Trainer;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,9 +22,16 @@ public class Unavailable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private Integer trainerId;
-
     private Timestamp startDate;
     private Timestamp endDate;
 
+    @JsonBackReference
+    @ManyToOne
+    @JoinColumn(name = "room_id")
+    private Room room;
+
+    @JsonBackReference
+    @ManyToOne
+    @JoinColumn(name = "trainer_id")
+    private Trainer trainer;
 }

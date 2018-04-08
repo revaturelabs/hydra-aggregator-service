@@ -5,7 +5,7 @@ insert into location (id, active, city, name, state) values (1, true, 'Reston', 
 
 insert into building (id, active, location, name) values (1, true, 1, 'Reston main');
 
-insert into room (id, active, building_id, name) values (1, true, 1, 'Room 304');
+insert into room (id, active, building_id, room_name) values (1, true, 1, 'Room 304');
 
 -- SKILLS
 
@@ -18,9 +18,6 @@ insert into curriculum(name, active, core) values ('SQL', true, true);
 insert into curriculum_skill(curriculum_id, skill_id) values (1, 1);
 insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
 
---
-
-insert into unavailable(id, trainer_id, start_date, end_date) values (1, 3, '2018-04-09', '2018-04-22');
 
 -- TRAINER
 
@@ -30,6 +27,7 @@ INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, TIER) VALUES('Dan', 'Pickles', 'ROLE_
 -- TRAINER/SKILL
 
 insert into skill_trainer(skill_id, trainer_id) values (1, 1);
+insert into skill_trainer(skill_id, trainer_id) values (1, 2);
 
 -- BATCH STATUS
 
@@ -40,5 +38,10 @@ insert into batch_location(location_id, location_name, building_id, building_nam
 
 -- BATCHES
 insert into batch(start_date, end_date, curriculum_id, focus_id, trainer_id, co_trainer_id, batch_status_id, batch_location_id) values (now(), now(), 1, 2, 1, 2, 1, 1);
+
+-- UNAVAILABLES
+insert into unavailable(trainer_id, start_date, end_date) values (1, now(), now());
+insert into unavailable(trainer_id, start_date, end_date) values (2, now(), now());
+insert into unavailable(room_id, start_date, end_date) values (1, now(), now());
 
 COMMIT;

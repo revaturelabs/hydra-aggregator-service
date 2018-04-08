@@ -12,8 +12,8 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@EqualsAndHashCode(exclude = {"skills"})
-@ToString(exclude = {"skills"})
+@EqualsAndHashCode(exclude = {"skills", "unavailabilities"})
+@ToString(exclude = {"skills", "unavailabilities"})
 @Builder
 public class Trainer {
 
@@ -26,8 +26,7 @@ public class Trainer {
     private byte[] certifications;
     private byte[] resume;
 
-    @OneToMany
-    @JoinColumn(name = "unavailable_id")
+    @OneToMany(mappedBy = "trainer")
     private Set<Unavailable> unavailabilities;
 
     @ManyToMany(fetch = FetchType.EAGER)
