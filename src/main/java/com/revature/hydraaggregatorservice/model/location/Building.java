@@ -1,20 +1,17 @@
 package com.revature.hydraaggregatorservice.model.location;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@EqualsAndHashCode(exclude = {"rooms"})
+@ToString(exclude = {"rooms"})
 @Entity
 public class Building {
 
@@ -25,6 +22,12 @@ public class Building {
     @ColumnDefault("true")
     private boolean active;
 
-    private String location;
+    @OneToOne
+    @JoinColumn(name = "address_id")
+    private Address address;
+
     private String name;
+
+    @OneToMany(mappedBy = "building")
+    private Set<Room> rooms;
 }

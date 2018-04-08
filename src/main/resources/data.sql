@@ -1,9 +1,10 @@
 -- ADDRESS
-Insert into ADDRESS (ADDRESS_ID,STREET,CITY,STATE,ZIPCODE,COMPANY,ACTIVE) values (1,'65-30 Kissena Blvd, CEP Hall 2','Queens','NY','11367','Tech Incubator at Queens College',true);
+insert into address(name, city, state) values ('65-30 Kissena Blvd.', 'Queens', 'NY');
 
+-- LOCATION
 insert into location (id, active, city, name, state) values (1, true, 'Reston', 'Reston HQ', 'Virginia');
 
-insert into building (id, active, location, name) values (1, true, 1, 'Reston main');
+insert into building (id, active, address_id, name) values (1, true, 1, 'Tech Incubator at Queens College');
 
 insert into room (id, active, building_id, room_name) values (1, true, 1, 'Room 304');
 
