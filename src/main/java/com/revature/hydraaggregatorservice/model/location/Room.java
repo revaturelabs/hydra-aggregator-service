@@ -1,5 +1,6 @@
 package com.revature.hydraaggregatorservice.model.location;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.revature.hydraaggregatorservice.model.unavailable.Unavailable;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
@@ -25,11 +26,11 @@ public class Room {
 
     private String roomName;
 
+    @JsonBackReference
     @JoinColumn(name = "building_id")
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private Building building;
 
     @OneToMany(mappedBy = "room")
     private Set<Unavailable> unavailabilities;
-
 }

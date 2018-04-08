@@ -28,6 +28,4 @@ public class Location {
 
     @ColumnDefault("true")
     private boolean active;
-
-    // TODO: Buildings
 }
