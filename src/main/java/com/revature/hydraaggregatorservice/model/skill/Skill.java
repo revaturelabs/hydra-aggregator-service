@@ -1,7 +1,5 @@
 package com.revature.hydraaggregatorservice.model.skill;
 
-import javax.persistence.*;
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.revature.hydraaggregatorservice.model.batch.Batch;
 import com.revature.hydraaggregatorservice.model.curriculum.Curriculum;
@@ -10,6 +8,7 @@ import com.revature.hydraaggregatorservice.model.trainers.Trainer;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
+import javax.persistence.*;
 import java.util.Set;
 
 @Data
@@ -30,19 +29,19 @@ public class Skill {
     @ColumnDefault("true")
     private boolean active;
 
-    @JsonBackReference
+    @JsonBackReference(value = "ref-curricula")
     @ManyToMany(mappedBy = "skills")
     private Set<Curriculum> curricula;
 
-    @JsonBackReference
+    @JsonBackReference(value = "ref-focuses")
     @ManyToMany(mappedBy = "skills")
     private Set<Focus> focuses;
 
-    @JsonBackReference
+    @JsonBackReference(value = "ref-trainers")
     @ManyToMany(mappedBy = "skills")
     private Set<Trainer> trainers;
 
-    @JsonBackReference
+    @JsonBackReference(value = "ref-batches")
     @ManyToMany(mappedBy = "skills")
     private Set<Batch> batches;
 }
