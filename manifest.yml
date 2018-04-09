@@ -1,0 +1,5 @@
+---
+applications:
+- name: aggregator
+  path: ./target/hydra-aggregator-service-0.0.1-SNAPSHOT.jar
+  no-route: true
