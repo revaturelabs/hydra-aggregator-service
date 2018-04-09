@@ -12,18 +12,26 @@ insert into room (id, active, building_id, room_name) values (1, true, 1, 'Room 
 
 insert into skill(id, name, active) values (1, 'Java', true);
 
+-- FOCUS
+
+insert into focus(name) values ('PCF');
+insert into focus_skill(focus_id, skill_id) values (1, 1);
+
 -- CURRICULUM
 
 insert into curriculum(name, active, core) values ('Core Java', true, true);
 insert into curriculum(name, active, core) values ('SQL', true, true);
+
+insert into curriculum_focus(cid, fid) values (1, 1);
+insert into curriculum_focus(cid, fid) values (2, 1);
+
 insert into curriculum_skill(curriculum_id, skill_id) values (1, 1);
 insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
 
-
 -- TRAINER
 
-INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, TIER) VALUES('Patrick', 'Walsh', 'ROLE_VP');
-INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, TIER) VALUES('Dan', 'Pickles', 'ROLE_VP');
+INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, TIER, preferred_location) VALUES('Patrick', 'Walsh', 'ROLE_VP', 1);
+INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, TIER, preferred_location) VALUES('Dan', 'Pickles', 'ROLE_VP', 1);
 
 -- TRAINER/SKILL
 
@@ -38,7 +46,7 @@ insert into batch_status(name) values ('In Progress');
 insert into batch_location(location_id, location_name, building_id, building_name, room_id, room_name) values (1, 'Reston', 1, 'Reston main', 1, 'Room 304');
 
 -- BATCHES
-insert into batch(name, start_date, end_date, curriculum_id, focus_id, trainer_id, co_trainer_id, address_id, building_id) values ('1805_Feb_Java', now(), now(), 1, 2, 1, 2, 1, 1);
+insert into batch(name, start_date, end_date, curriculum_id, focus_id, trainer_id, co_trainer_id, address_id, building_id) values ('1805_Feb_Java', now(), now(), 1, 1, 1, 2, 1, 1);
 
 -- UNAVAILABLES
 insert into unavailable(trainer_id, start_date, end_date) values (1, now(), now());

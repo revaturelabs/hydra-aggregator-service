@@ -1,9 +1,9 @@
 package com.revature.hydraaggregatorservice.model.curriculum;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.revature.hydraaggregatorservice.model.skill.Skill;
 import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -12,10 +12,9 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Builder
-@EqualsAndHashCode(exclude = {"skills", "focuses"})
-@ToString(exclude = {"skills", "focuses"})
-public class Curriculum {
+@EqualsAndHashCode(exclude = {"skills", "curricula"})
+@ToString(exclude = {"skills", "curricula"})
+public class Focus {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,22 +22,17 @@ public class Curriculum {
 
     private String name;
 
+    @ColumnDefault("true")
     private Boolean active;
-    private Boolean core;
 
-    @JsonIdentityReference
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(
-        name = "curriculum_focus",
-        joinColumns = @JoinColumn(name = "cid"),
-        inverseJoinColumns = @JoinColumn(name = "fid")
-    )
-    private Set<Focus> focuses;
+    @JsonBackReference
+    @ManyToMany(mappedBy = "focuses")
+    private Set<Curriculum> curricula;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
-        name = "curriculum_skill",
-        joinColumns = {@JoinColumn(name = "curriculum_id")},
+        name = "focus_skill",
+        joinColumns = {@JoinColumn(name = "focus_id")},
         inverseJoinColumns = {@JoinColumn(name = "skill_id")}
     )
     private Set<Skill> skills;

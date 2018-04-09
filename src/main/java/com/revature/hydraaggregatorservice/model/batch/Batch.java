@@ -3,6 +3,7 @@ package com.revature.hydraaggregatorservice.model.batch;
 import javax.persistence.*;
 
 import com.revature.hydraaggregatorservice.model.curriculum.Curriculum;
+import com.revature.hydraaggregatorservice.model.curriculum.Focus;
 import com.revature.hydraaggregatorservice.model.location.Address;
 import com.revature.hydraaggregatorservice.model.location.Building;
 import com.revature.hydraaggregatorservice.model.skill.Skill;
@@ -35,7 +36,7 @@ public class Batch {
 
     @OneToOne
     @JoinColumn(name = "focus_id")
-    private Curriculum focus;
+    private Focus focus;
 
     @OneToOne
     @JoinColumn(name = "trainer_id")
