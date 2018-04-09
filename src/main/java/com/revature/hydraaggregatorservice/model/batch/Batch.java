@@ -3,6 +3,8 @@ package com.revature.hydraaggregatorservice.model.batch;
 import javax.persistence.*;
 
 import com.revature.hydraaggregatorservice.model.curriculum.Curriculum;
+import com.revature.hydraaggregatorservice.model.location.Address;
+import com.revature.hydraaggregatorservice.model.location.Building;
 import com.revature.hydraaggregatorservice.model.skill.Skill;
 import com.revature.hydraaggregatorservice.model.trainers.Trainer;
 import lombok.AllArgsConstructor;
@@ -23,6 +25,7 @@ public class Batch {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private String name;
     private Timestamp startDate;
     private Timestamp endDate;
 
@@ -40,7 +43,7 @@ public class Batch {
 
     @OneToOne
     @JoinColumn(name = "co_trainer_id")
-    private Trainer coTrainer;
+    private Trainer cotrainer;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
@@ -51,10 +54,10 @@ public class Batch {
     private Set<Skill> skills;
 
     @OneToOne
-    @JoinColumn(name = "batch_status_id")
-    private BatchStatus batchStatus;
+    @JoinColumn(name = "address_id")
+    private Address address;
 
     @OneToOne
-    @JoinColumn(name = "batch_location_id")
-    private BatchLocation batchLocation;
+    @JoinColumn(name = "building_id")
+    private Building building;
 }

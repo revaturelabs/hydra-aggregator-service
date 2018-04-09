@@ -38,7 +38,7 @@ insert into batch_status(name) values ('In Progress');
 insert into batch_location(location_id, location_name, building_id, building_name, room_id, room_name) values (1, 'Reston', 1, 'Reston main', 1, 'Room 304');
 
 -- BATCHES
-insert into batch(start_date, end_date, curriculum_id, focus_id, trainer_id, co_trainer_id, batch_status_id, batch_location_id) values (now(), now(), 1, 2, 1, 2, 1, 1);
+insert into batch(name, start_date, end_date, curriculum_id, focus_id, trainer_id, co_trainer_id, address_id, building_id) values ('1805_Feb_Java', now(), now(), 1, 2, 1, 2, 1, 1);
 
 -- UNAVAILABLES
 insert into unavailable(trainer_id, start_date, end_date) values (1, now(), now());
