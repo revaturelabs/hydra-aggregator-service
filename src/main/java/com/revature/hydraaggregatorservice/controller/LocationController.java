@@ -25,25 +25,25 @@ public class LocationController {
         this.roomRepository = roomRepository;
     }
 
-    @CrossOrigin
+    @CrossOrigin(exposedHeaders = "Access-Control-Allow-Origin")
     @RequestMapping(value = "/addresses", method = RequestMethod.GET)
     public ResponseEntity getAddresses() {
         return new ResponseEntity(addressRepository.findAll(), HttpStatus.OK);
     }
 
-    @CrossOrigin
+    @CrossOrigin(exposedHeaders = "Access-Control-Allow-Origin")
     @RequestMapping(value = "/buildings", method = RequestMethod.GET)
     public ResponseEntity getBuildings() {
         return new ResponseEntity(buildingRepository.findAll(), HttpStatus.OK);
     }
 
-    @CrossOrigin
+    @CrossOrigin(exposedHeaders = "Access-Control-Allow-Origin")
     @RequestMapping(value = "/locations", method = RequestMethod.GET)
     public ResponseEntity getLocations() {
         return new ResponseEntity(locationRepository.findAll(), HttpStatus.OK);
     }
 
-    @CrossOrigin
+    @CrossOrigin(exposedHeaders = "Access-Control-Allow-Origin")
     @RequestMapping(value = "/rooms", method = RequestMethod.GET)
     public ResponseEntity getRooms() {
         return new ResponseEntity(roomRepository.findAll(), HttpStatus.OK);

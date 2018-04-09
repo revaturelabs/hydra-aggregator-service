@@ -17,7 +17,7 @@ public class SettingsController {
         this.assignforceSettingsRepository = assignforceSettingsRepository;
     }
 
-    @CrossOrigin
+    @CrossOrigin(exposedHeaders = "Access-Control-Allow-Origin")
     @RequestMapping(value = "/assignforce-settings", method = RequestMethod.GET)
     public ResponseEntity getAssignforceSettings() {
         return new ResponseEntity(assignforceSettingsRepository.findAll(), HttpStatus.OK);

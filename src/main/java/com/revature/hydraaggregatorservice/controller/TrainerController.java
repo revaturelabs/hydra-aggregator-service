@@ -17,7 +17,7 @@ public class TrainerController {
         this.trainerRepository = trainerRepository;
     }
 
-    @CrossOrigin
+    @CrossOrigin(exposedHeaders = "Access-Control-Allow-Origin")
     @RequestMapping(value = "/trainers", method = RequestMethod.GET)
     public ResponseEntity getTrainers() {
         return new ResponseEntity(trainerRepository.findAll(), HttpStatus.OK);

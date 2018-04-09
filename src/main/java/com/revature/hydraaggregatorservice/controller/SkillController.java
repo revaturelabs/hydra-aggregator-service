@@ -17,7 +17,7 @@ public class SkillController {
         this.skillRepository = skillRepository;
     }
 
-    @CrossOrigin
+    @CrossOrigin(exposedHeaders = "Access-Control-Allow-Origin")
     @RequestMapping(value = "/skills", method = RequestMethod.GET)
     public ResponseEntity getSkills() {
         return new ResponseEntity(skillRepository.findAll(), HttpStatus.OK);
