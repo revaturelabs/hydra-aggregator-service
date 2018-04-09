@@ -17,7 +17,6 @@ public class TrainerController {
         this.trainerRepository = trainerRepository;
     }
 
-    @CrossOrigin
     @RequestMapping(value = "/trainers", method = RequestMethod.GET)
     public ResponseEntity getTrainers() {
         return new ResponseEntity(trainerRepository.findAll(), HttpStatus.OK);

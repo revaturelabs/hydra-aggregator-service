@@ -17,7 +17,6 @@ public class BatchController {
         this.batchRepository = batchRepository;
     }
 
-    @CrossOrigin
     @RequestMapping(value = "/batches", method = RequestMethod.GET)
     public ResponseEntity getBatches() {
         return new ResponseEntity(batchRepository.findAll(), HttpStatus.OK);

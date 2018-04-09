@@ -20,13 +20,11 @@ public class CurriculumController {
         this.focusRepository = focusRepository;
     }
 
-    @CrossOrigin
     @RequestMapping(value = "/curricula", method = RequestMethod.GET)
     public ResponseEntity getCurricula() {
         return new ResponseEntity(curriculumRepository.findAll(), HttpStatus.OK);
     }
 
-    @CrossOrigin
     @RequestMapping(value = "/focuses", method = RequestMethod.GET)
     public ResponseEntity getFocuses() {
         return new ResponseEntity(focusRepository.findAll(), HttpStatus.OK);
