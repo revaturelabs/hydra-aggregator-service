@@ -15,7 +15,6 @@ import java.util.Set;
 @Entity
 @EqualsAndHashCode(exclude = {"skills", "unavailabilities"})
 @ToString(exclude = {"skills", "unavailabilities"})
-@Builder
 public class Trainer {
 
     @Id
