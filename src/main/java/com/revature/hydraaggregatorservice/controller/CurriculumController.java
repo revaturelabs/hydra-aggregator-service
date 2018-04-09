@@ -4,6 +4,7 @@ import com.revature.hydraaggregatorservice.repository.curriculum.CurriculumRepos
 import org.springframework.data.rest.webmvc.RepositoryRestController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -16,6 +17,7 @@ public class CurriculumController {
         this.curriculumRepository = curriculumRepository;
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/curricula", method = RequestMethod.GET)
     public ResponseEntity getCurricula() {
         return new ResponseEntity(curriculumRepository.findAll(), HttpStatus.OK);

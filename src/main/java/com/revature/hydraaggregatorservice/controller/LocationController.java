@@ -7,6 +7,7 @@ import com.revature.hydraaggregatorservice.repository.location.RoomRepository;
 import org.springframework.data.rest.webmvc.RepositoryRestController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -24,21 +25,25 @@ public class LocationController {
         this.roomRepository = roomRepository;
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/addresses", method = RequestMethod.GET)
     public ResponseEntity getAddresses() {
         return new ResponseEntity(addressRepository.findAll(), HttpStatus.OK);
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/buildings", method = RequestMethod.GET)
     public ResponseEntity getBuildings() {
         return new ResponseEntity(buildingRepository.findAll(), HttpStatus.OK);
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/locations", method = RequestMethod.GET)
     public ResponseEntity getLocations() {
         return new ResponseEntity(locationRepository.findAll(), HttpStatus.OK);
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/rooms", method = RequestMethod.GET)
     public ResponseEntity getRooms() {
         return new ResponseEntity(roomRepository.findAll(), HttpStatus.OK);
