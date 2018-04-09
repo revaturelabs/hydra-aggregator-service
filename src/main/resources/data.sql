@@ -30,8 +30,9 @@ insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
 
 -- TRAINER
 
-INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, TIER, address_id) VALUES('Patrick', 'Walsh', 'ROLE_VP', 1);
-INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, TIER, address_id) VALUES('Dan', 'Pickles', 'ROLE_VP', 1);
+INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, email, TIER, address_id) VALUES('Patrick', 'Walsh', 'patrickwalsh@example.com', 'ROLE_VP', 1);
+INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, email, TIER, address_id) VALUES('Dan', 'Pickles', 'danpickles@example.com', 'ROLE_VP', 1);
+insert into trainer(first_name, last_name, email, tier, address_id) values('August', 'Duet', 'august.duet@revature.com', 'ROLE_TRAINER', 1);
 
 -- TRAINER/SKILL
 

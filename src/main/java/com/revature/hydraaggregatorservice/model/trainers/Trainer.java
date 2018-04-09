@@ -23,6 +23,7 @@ public class Trainer {
 
     private String firstName;
     private String lastName;
+    private String email;
     private byte[] certifications;
     private byte[] resume;
 
