@@ -20,7 +20,10 @@ insert into focus_skill(focus_id, skill_id) values (1, 1);
 -- CURRICULUM
 
 insert into curriculum(name, active, core) values ('Core Java', true, true);
-insert into curriculum(name, active, core) values ('SQL', true, true);
+insert into curriculum(name, active, core) values ('.NET', true, true);
+insert into curriculum(name, active, core) values ('Business Analyst', true, true);
+insert into curriculum(name, active, core) values ('JTA', true, true);
+insert into curriculum(name, active, core) values ('System Administration', true, true);
 
 insert into curriculum_focus(cid, fid) values (1, 1);
 insert into curriculum_focus(cid, fid) values (2, 1);
