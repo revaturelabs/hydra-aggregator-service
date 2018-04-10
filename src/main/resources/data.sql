@@ -10,7 +10,10 @@ insert into room (id, active, building_id, room_name) values (1, true, 1, 'Room 
 
 -- SKILLS
 
-insert into skill(id, name, active) values (1, 'Java', true);
+insert into skill(name, active) values ('Java', true);
+insert into skill(name, active) values ('Microsoft', true);
+insert into skill(name, active) values ('Java', true);
+insert into skill(name, active) values ('Linux', true);
 
 -- FOCUS
 
