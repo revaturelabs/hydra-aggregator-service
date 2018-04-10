@@ -11,6 +11,7 @@ insert into room (id, active, building_id, room_name) values (1, true, 1, 'Room 
 -- SKILLS
 
 insert into skill(name, active) values ('Java', true);
+insert into skill(name, active) values ('SQL', true);
 insert into skill(name, active) values ('Microsoft', true);
 insert into skill(name, active) values ('Java', true);
 insert into skill(name, active) values ('Linux', true);
@@ -33,12 +34,15 @@ insert into curriculum_focus(cid, fid) values (2, 1);
 
 insert into curriculum_skill(curriculum_id, skill_id) values (1, 1);
 insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
+insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
+insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
+insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
 
 -- TRAINER
 
-INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, email, TIER, address_id) VALUES('Patrick', 'Walsh', 'patrickwalsh@example.com', 'ROLE_VP', 1);
-INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, email, TIER, address_id) VALUES('Dan', 'Pickles', 'danpickles@example.com', 'ROLE_VP', 1);
-insert into trainer(first_name, last_name, email, tier, address_id) values('August', 'Duet', 'august.duet@revature.com', 'ROLE_TRAINER', 1);
+INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, email, TIER, address_id, active) VALUES('Patrick', 'Walsh', 'patrickwalsh@example.com', 'ROLE_VP', 1, true);
+INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, email, TIER, address_id, active) VALUES('Dan', 'Pickles', 'danpickles@example.com', 'ROLE_VP', 1, true);
+insert into trainer(first_name, last_name, email, tier, address_id, active) values('August', 'Duet', 'august.duet@revature.com', 'ROLE_TRAINER', 1, true);
 
 -- TRAINER/SKILL
 
