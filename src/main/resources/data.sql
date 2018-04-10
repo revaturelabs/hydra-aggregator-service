@@ -13,7 +13,6 @@ insert into room (id, active, building_id, room_name) values (1, true, 1, 'Room 
 insert into skill(name, active) values ('Java', true);
 insert into skill(name, active) values ('SQL', true);
 insert into skill(name, active) values ('Microsoft', true);
-insert into skill(name, active) values ('Java', true);
 insert into skill(name, active) values ('Linux', true);
 
 -- FOCUS
@@ -33,10 +32,10 @@ insert into curriculum_focus(cid, fid) values (1, 1);
 insert into curriculum_focus(cid, fid) values (2, 1);
 
 insert into curriculum_skill(curriculum_id, skill_id) values (1, 1);
-insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
-insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
-insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
-insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
+insert into curriculum_skill(curriculum_id, skill_id) values (2, 2);
+insert into curriculum_skill(curriculum_id, skill_id) values (3, 3);
+insert into curriculum_skill(curriculum_id, skill_id) values (4, 1);
+insert into curriculum_skill(curriculum_id, skill_id) values (5, 4);
 
 -- TRAINER
 
