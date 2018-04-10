@@ -13,7 +13,7 @@ spring:
       registrationMethod: direct
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
   data:
     rest:
       default-media-type: application/json
