@@ -20,7 +20,10 @@ insert into focus_skill(focus_id, skill_id) values (1, 1);
 -- CURRICULUM
 
 insert into curriculum(name, active, core) values ('Core Java', true, true);
-insert into curriculum(name, active, core) values ('SQL', true, true);
+insert into curriculum(name, active, core) values ('.NET', true, true);
+insert into curriculum(name, active, core) values ('Business Analyst', true, true);
+insert into curriculum(name, active, core) values ('JTA', true, true);
+insert into curriculum(name, active, core) values ('System Administration', true, true);
 
 insert into curriculum_focus(cid, fid) values (1, 1);
 insert into curriculum_focus(cid, fid) values (2, 1);
@@ -30,8 +33,9 @@ insert into curriculum_skill(curriculum_id, skill_id) values (2, 1);
 
 -- TRAINER
 
-INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, TIER, address_id) VALUES('Patrick', 'Walsh', 'ROLE_VP', 1);
-INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, TIER, address_id) VALUES('Dan', 'Pickles', 'ROLE_VP', 1);
+INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, email, TIER, address_id) VALUES('Patrick', 'Walsh', 'patrickwalsh@example.com', 'ROLE_VP', 1);
+INSERT INTO TRAINER(FIRST_NAME, LAST_NAME, email, TIER, address_id) VALUES('Dan', 'Pickles', 'danpickles@example.com', 'ROLE_VP', 1);
+insert into trainer(first_name, last_name, email, tier, address_id) values('August', 'Duet', 'august.duet@revature.com', 'ROLE_TRAINER', 1);
 
 -- TRAINER/SKILL
 
